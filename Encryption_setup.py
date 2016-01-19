@@ -19,8 +19,8 @@ decrypt ={} #decryption dictionary, keys are n and values characters.
 
 while n < list_len:
     popped = random.choice(string_list)
-    encrypt[popped] = (n);
-    decrypt[n] = (popped);
+    encrypt[popped] = (n+2);
+    decrypt[n+2] = (popped);
     string_list.remove(popped)
     n = n + 1
 
